@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto auto ;
+            grid-template-columns: auto auto auto ;
+            grid-gap: 0;
+            justify-content: center;
+        }
+        .item{
+            /* padding: 120px; */
+        }
+        .item-1{
+            grid-column: 1;
+            grid-row: span 2;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* background-color: brown; */
+        }
+        .item-2{
+            grid-row-start: 2 / 2;
+            grid-row: span 3;
+            /* width: 200px; */
+            /* height: 325px; */
+            /* background-color: beige; */
+
+        }
+        .item-3{
+            grid-column: 3;
+            grid-row: span 2;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* background-color: red; */
+        }
+        .item-4{
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row: span 2;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* background-color: brown; */
+        }
+        .item-5{
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-row: span 2;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* background-color: brown; */
+        }
+        .item-6{
+            grid-row-start: 4;
+            grid-row-end: span 3;
+            grid-column: 2;
+            
+            /* width: 200px; */
+            /* height: 325px; */
+            /* background-color: beige; */
+        }
+        .item-8{
+            grid-column: 3;
+            grid-row: 2;
+            grid-row: span 2;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* background-color: red; */
+        }
+        .item-7{
+            
+            grid-column: 3;
+            /* width: 200px; */
+            /* height: 200px; */
+            grid-row: 3/5;
+            /* background-color: red; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"><img src="./7.PNG" alt=""></div>
+        <div class="item item-2"><img src="./10.PNG" alt=""></div>
+        <div class="item item-3"><img src="./12.PNG" alt=""></div>
+        <div class="item item-4"><img src="./8.PNG" alt=""></div>
+        <div class="item item-5"><img src="./9.PNG" alt=""></div>
+        <div class="item item-6"><img src="./11.PNG" alt=""></div>
+        <div class="item item-7"><img src="./13.PNG" alt=""></div>
+        <div class="item item-8"><img src="./14.PNG" alt=""></div>
+    </div>
+</body>
+</html>
